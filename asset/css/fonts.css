@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/* #### FONT-SIZE #### */
+.fs12 {font-size:0.625rem;}
+.fs14 {font-size:0.72917rem;}
+.fs16 {font-size:0.83333rem;}
+.fs17 {font-size:0.88542rem;}
+.fs18 {font-size:0.9375rem;}
+.fs20 {font-size:1.04167rem;}
+.fs22 {font-size:1.14583rem;}
+.fs24 {font-size:1.25rem;}
+.fs26 {font-size:1.35417rem;}
+.fs28 {font-size:1.45833rem;}
+.fs30 {font-size:1.5625rem;}
+.fs32 {font-size:1.66667rem;}
+.fs34 {font-size:1.77083rem;}
+.fs36 {font-size:1.875rem;}
+.fs38 {font-size:1.97917rem;}
+.fs40 {font-size:2.08333rem;}
+.fs42 {font-size:2.1875rem;}
+.fs48 {font-size:2.5rem;}
+.fs52 {font-size:2.70833rem;}
+
+
+/* #### LINE-HEIGHT #### */
+.lh56 {line-height:2.91667rem;}
+
+
+/* #### LETTER-SPACING #### */
+.ls-01 {letter-spacing:-0.1px;}
+.ls-02 {letter-spacing:-0.2px;}
+.ls-03 {letter-spacing:-0.3px;}
+.ls-04 {letter-spacing:-0.4px;}
+.ls-05 {letter-spacing:-0.5px;}
+
+
+/* #### FONT-COLOR #### */
+.fcIBBlit {color:#35dbb4;}
+.fcW {color:#fff;}
+.fcB {color:#000;}
+.fc999 {color:#999;}
+.fc666 {color:#666;}
+.fcCF {color:#cfcfcf;}
+.fcGR {
+	background: -webkit-linear-gradient(left, #0ba2b3, #0081ee);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color : #0ba2b3;
+}
+
+
+/* #### FONT WEIGHT #### */
+.fwB {font-weight:bold;}
+
+
+/* #### TEXT ALIGN #### */
+.taC {text-align:center !important;}
+
+
+/* #### FONT-AWESOME #### */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+/* #### INSANIBURGER #### */
+@font-face { font-family: 'Insaniburger'; src: url(/asset/fonts/insaniburger/Insanibu.ttf) format('truetype'); }
+.ibur {font-family: 'Insaniburger';}
+
+
+/* #### MONSTERRAT #### */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+.monT {font-family: 'Montserrat', sans-serif;font-weight:100 !important;font-style: normal;}
+.monEL {font-family: 'Montserrat', sans-serif;font-weight:200 !important;font-style: normal;}
+.monL {font-family: 'Montserrat', sans-serif;font-weight:300 !important;font-style: normal;}
+.monR {font-family: 'Montserrat', sans-serif;font-weight:400 !important;font-style: normal;}
+.monM {font-family: 'Montserrat', sans-serif;font-weight:500 !important;font-style: normal;}
+.monSB {font-family: 'Montserrat', sans-serif;font-weight:600 !important;font-style: normal;}
+.monB {font-family: 'Montserrat', sans-serif;font-weight:700 !important;font-style: normal;}
+.monEB {font-family: 'Montserrat', sans-serif;font-weight:800 !important;font-style: normal;}
+.monBL {font-family: 'Montserrat', sans-serif;font-weight:900 !important;font-style: normal;}
+
+
+/* #### S-COREDREAM #### */
+@font-face { font-family: 'S-CoreDream-1Thin'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-2ExtraLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-4Regular'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-5Medium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-6Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-7ExtraBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-8Heavy'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-9Black'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff'); font-weight: normal; font-style: normal; }
+.scoreT {font-family: 'S-CoreDream-1Thin', sans-serif;font-weight:100 !important;font-style: normal;}
+.scoreET {font-family: 'S-CoreDream-2ExtraLight', sans-serif;font-weight:200 !important;font-style: normal;}
+.scoreL {font-family: 'S-CoreDream-3Light', sans-serif;font-weight:300 !important;font-style: normal;}
+.scoreR {font-family: 'S-CoreDream-4Regular', sans-serif;font-weight:400 !important;font-style: normal;}
+.scoreM {font-family: 'S-CoreDream-5Medium', sans-serif;font-weight:500 !important;font-style: normal;}
+.scoreB {font-family: 'S-CoreDream-6Bold', sans-serif;font-weight:600 !important;font-style: normal;}
+.scoreEB {font-family: 'S-CoreDream-7ExtraBold', sans-serif;font-weight:700 !important;font-style: normal;}
+.scoreH {font-family: 'S-CoreDream-8Heavy', sans-serif;font-weight:800 !important;font-style: normal;}
+.scoreBL {font-family: 'S-CoreDream-9Black', sans-serif;font-weight:900 !important;font-style: normal;}
+
+
+/* #### MYRIAD PRO #### */
+@font-face {font-family: 'MyriadPro';src: url('/asset/fonts/myriad/MyriadPro-Regular.eot');src: url('/asset/fonts/myriad/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),url('/asset/fonts/myriad/MyriadPro-Regular.woff') format('woff'),url('/asset/fonts/myriad/MyriadPro-Regular.ttf')  format('truetype'),url('/asset/fonts/myriad/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');font-weight: normal;font-style: normal;}
+.myriadL {font-family: myriad-pro, sans-serif;font-style: normal;font-weight: 300;}
+.myriadR {font-family: myriad-pro, sans-serif;font-style: normal;font-weight: 400;}

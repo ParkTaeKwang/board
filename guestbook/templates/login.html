@@ -1,0 +1,90 @@
+{% load socialaccount %}
+{% with subtitle="로그인" menu="res" gnb="false" subgnb="T1" fnb="false" %}
+<style>
+	
+</style>
+{% include 'core/include/header.html' %}
+		<div class="LoginBody">
+			<div class="loginBox">
+				<p class="loginTitle scoreET fs36 fcW lh56"><span class="myriadL fs40">SNS</span>계정으로 <br>간편하게 로그인하세요.</p>
+				<p class="loginFacebook"><a href="{% provider_login_url 'facebook' method='oauth2' %}"></a></p>
+				<p class="loginGoogle"><a href="{% provider_login_url 'google' method='oauth2' %}"></a></p>
+				<p class="loginKakao"><a href="{% provider_login_url 'kakao' method='oauth2' %}"></a></p>
+				<p class="loginNaver"><a onclick="javascript:layer_popup('#login_pop');"></a></p>
+			</div>
+			<p class="loginCopyright monR fcW">(C) Softmania 2019</p>
+		</div>
+
+
+
+		<script>
+			function layer_popup() { 
+				if(document.all.login_layer.style.visibility=="hidden") {
+					document.all.login_layer.style.visibility="visible";
+					$("body").addClass('Dim');
+					return false;
+				}
+				
+			}
+			$(document).ready(function() {
+				$('#close').click(function() {
+					if(document.all.login_layer.style.visibility=="visible") {
+						document.all.login_layer.style.visibility="hidden";
+						$("body").removeClass('Dim');
+						return false;
+					}
+				});
+			});
+
+			$(document).ready(function(){
+				var fileTarget = $('#login_pop .upload-hidden');
+
+				fileTarget.on('change', function(){ // 값이 변경되면
+					if(window.FileReader){ // modern browser
+						var filename = $(this)[0].files[0].name;
+					} else { // old IE
+						var filename = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출
+					}
+
+					// 추출한 파일명 삽입
+					$(this).siblings('.upload-name').val(filename);
+				});
+			}); 
+		</script>
+
+		
+
+		<!-- #### ICON CHANGE POPUP #### -->
+		<div id="login_layer" style="visibility:hidden;">
+			<div class="dimBg"></div>
+			<div id="login_pop">
+				<div class="topArea">
+					<p class="iconTit popTitLeft scoreR fs28">키스토어 로그인</p>
+					<p id="close" class="popup close popTitRight">
+						<img src="/asset/img/common/icon_close.png">
+					</p>
+				</div>
+				<div>
+					<form action="upload.php" method="post" enctype="multipart/form-data">
+						<p class="scoreR">
+							<span>키스토어 파일</span>
+							<input class="upload-name" value="파일선택" disabled="disabled">
+							<label for="login_keystore">업로드</label>
+							<input type="file" id="login_keystore" name="login_keystore" class="upload-hidden">
+						</p>
+						<p class="scoreR">
+							<span>키스토어 비밀번호</span>
+							<input type="password" id="keystore_pass" name="keystore_pass" placeholder="키스토어 비밀번호 입력" class="scoreR">
+						</p>
+						<input type="submit" class="btn avatarBtn scoreR fs22 fcW" style="width:100%;" value="로그인" name="로그인">
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- #### ICON CHANGE POPUP #### -->
+
+	
+
+
+{% include 'core/include/footer.html' %}
+{% endwith %}
